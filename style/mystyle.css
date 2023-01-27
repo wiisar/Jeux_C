@@ -1,0 +1,146 @@
+body {
+    background-image: url(../image/background.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #fdfdfd;
+    font-size: 60px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+
+#legend {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+figcaption {
+    color: white;
+}
+
+img {
+    width: 8%;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(247, 245, 245);
+}
+
+#labri {
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+canvas {
+    background: transparent;
+    border-radius: 5%;
+    width: 100%; 
+    height: auto;
+    /* Hint: do not add padding to canvas! */
+}
+
+.canvas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.victory-canvas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+
+}
+
+p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.param {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.couleurs {
+    background-color: rgba(15, 13, 119, 0.726);
+    color: rgb(0, 0, 0);
+}
+
+pre {
+    color: #fdfdfd;
+}
+
+div {
+    text-align: center;
+}
+
+label {
+    color: rgb(255, 255, 255)
+}
+
+button{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 3px solid #3c67e3;
+    border-radius: 10px;
+    background-color: black;
+}
+button:hover{
+    animation: pulsate 1.3s infinite ease-in-out;
+}
+button:active{
+    animation: slide 0.3s infinite ease-in-out;
+}
+button:focus{
+    animation: slide 0.3s infinite ease-in;
+    animation-iteration-count: 1;
+    
+}
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 25px #5ddcff,
+        0 0 50px #4e00c2;
+    } 
+}
+
+
+@keyframes slide{
+    0%{
+        background-color:black;
+    }
+    100%{
+        background-color:#304892
+    }
+}
+.mytext { 
+    width: 30px; 
+}

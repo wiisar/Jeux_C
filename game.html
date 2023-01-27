@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" /><!-- For Mobile device -->
+    <link rel=" stylesheet" type="text/css" href="style/mystyle.css">
+</head>
+
+<body class="couleurs">
+
+    <!-- ********************* html ********************* -->
+
+    <h1>Demo Game Web</h1>
+
+    <p>Choisir la taille du jeu</p>
+    <div class="param">
+        <div><label for="x">Ligne: </label><input type="number" name="x" id="x" value="0" class = "mytext" /></div>
+        <div><label for="y">Colonne: </label><input type="number" name="y" id="y" value="0" class = "mytext" /></div>
+        <div><label for="m">Mur Souhaité: </label><input type="number" name="m" id="m" value="0" class = "mytext" /></div>
+        <div><label for="w">Wrapping: </label><input type="checkbox" name="w" id="w" value="0" class = "mytext" /></div>
+        <button onclick="new_random_canvas()">New Random Game</button>
+    </div>
+    <br>
+    <section>
+        <div id="legend">
+            <figure>
+                <img src="image/bulb.png" alt="bulb">
+                <figcaption>Lightbulb</figcaption>
+            </figure>
+            <figure>
+                <img src="image/f_error.png" alt="error">
+                <figcaption>Lightbulb error</figcaption>
+            </figure>
+            <figure>
+                <img src="image/lighted.png" alt="lighted">
+                <figcaption>cell lighted</figcaption>
+            </figure>
+            <figure>
+                <img src="image/marked.png" alt="marked">
+                <figcaption>mark</figcaption>
+            </figure>
+            <figure>
+                <img src="image/wallu.png" alt="wall">
+                <figcaption>wall</figcaption>
+            </figure>
+        </div>
+        <div class="canvas-container">
+            <canvas id='mycanvas' width="400" height="400"></canvas>
+        </div>
+
+        <div class ="victory-canvas">
+            <canvas id="victory-Canv" width="300" height="300"></canvas>
+        </div>
+    </section>
+    <br>
+    <div>
+        <button onclick="undo_canvas()">Undo</button>
+        <button onclick="redo_canvas()">Redo</button>
+        <button onclick="restart_canvas()">Restart</button>
+        <button onclick="solve_canvas()">Solve</button>
+
+    </div>
+
+
+    <div>
+        <p>Right clic to put a mark</p>
+        <p>Left clic to put a Lightbulb</p>
+    </div>
+    <hr>
+    <p><em>Lightup-05E 2022.</em></p>    
+    <!-- ********************* script ********************* -->
+
+    <script src="game.js"></script>
+    <script src="demo.js"></script>
+
+</body>
+
+</html>
